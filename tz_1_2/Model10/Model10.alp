@@ -2147,6 +2147,9 @@
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[agent.вГруппе = true;]]></Code>
+							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[onAdd]]></Name>
@@ -3054,6 +3057,21 @@
 						<Type><![CDATA[boolean]]></Type>        
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1732632801671</Id>
+					<Name><![CDATA[id_общее]]></Name>
+					<X>430</X><Y>70</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1732596541065</Id>
 					<Name><![CDATA[AdEffectiveness]]></Name>
@@ -3161,7 +3179,12 @@
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="190" Height="20">
-						<EntryAction><![CDATA[get_Main().НачалОбучение.inject(1)]]></EntryAction>
+						<EntryAction><![CDATA[id_общее = getId();
+get_Main().НачалОбучение.inject(1);
+//for (int i=0 ;get_Main().НачалОбучение.agents().size();i
+
+
+]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -3229,7 +3252,7 @@
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[(cycle < get_Main().trainingStages) ]]></Condition>
+						<Condition><![CDATA[(РезультатТестирования < 3)]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
@@ -3261,7 +3284,7 @@
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[DAY]]></Unit>
 						</Timeout>
-						<Condition><![CDATA[(РезультатТестирования > 3)]]></Condition>
+						<Condition><![CDATA[(РезультатТестирования >= 3)]]></Condition>
 						<Rate Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_DAY]]></Unit>
