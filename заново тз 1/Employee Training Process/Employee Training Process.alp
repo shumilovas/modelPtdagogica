@@ -391,7 +391,7 @@
 				<Connector>
 					<Id>1732779388502</Id>
 					<Name><![CDATA[connector23]]></Name>
-					<X>530</X><Y>350</Y>
+					<X>440</X><Y>370</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -418,7 +418,8 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-120</X><Y>-100</Y></Point>
+						<Point><X>-90</X><Y>0</Y></Point>
+						<Point><X>-30</X><Y>-120</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -517,40 +518,7 @@
 					</TargetConnectableItemReference>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-130</X><Y>10</Y></Point>
-					</Points>
-				</Connector>
-				<Connector>
-					<Id>1732779388500</Id>
-					<Name><![CDATA[connector22]]></Name>
-					<X>650</X><Y>360</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>false</ShowLabel>
-					<SourceEmbeddedObjectReference>
-						<PackageName><![CDATA[employee_training_process]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[СамостоятельноеОбучение1]]></ItemName>
-					</SourceEmbeddedObjectReference>
-					<SourceConnectableItemReference>
-						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
-						<ClassName><![CDATA[Delay]]></ClassName>
-						<ItemName><![CDATA[in]]></ItemName>
-					</SourceConnectableItemReference>
-					<TargetEmbeddedObjectReference>
-						<PackageName><![CDATA[employee_training_process]]></PackageName>
-						<ClassName><![CDATA[Main]]></ClassName>
-						<ItemName><![CDATA[созданиеГруппыОпоздавших]]></ItemName>
-					</TargetEmbeddedObjectReference>
-					<TargetConnectableItemReference>
-						<PackageName><![CDATA[employee_training_process]]></PackageName>
-						<ClassName><![CDATA[СозданиеГруппыОпоздавших]]></ClassName>
-						<ItemName><![CDATA[port1]]></ItemName>
-					</TargetConnectableItemReference>
-					<Points>
-						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>-100</X><Y>-40</Y></Point>
+						<Point><X>-70</X><Y>10</Y></Point>
 					</Points>
 				</Connector>
 				<Connector>
@@ -652,6 +620,73 @@
 						<Point><X>-150</X><Y>-90</Y></Point>
 						<Point><X>-141</X><Y>-134</Y></Point>
 						<Point><X>-130</X><Y>-180</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1732779719282</Id>
+					<Name><![CDATA[connector]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[employee_training_process]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[СамостоятельноеОбучение1]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.processmodeling]]></PackageName>
+						<ClassName><![CDATA[Delay]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[employee_training_process]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[ОбучениеСТренером]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.material_handling]]></PackageName>
+						<ClassName><![CDATA[Store]]></ClassName>
+						<ItemName><![CDATA[out]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>710</X><Y>360</Y></Point>
+						<Point><X>620</X><Y>360</Y></Point>
+					</Points>
+				</Connector>
+				<Connector>
+					<Id>1732779719284</Id>
+					<Name><![CDATA[connector2]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<SourceEmbeddedObjectReference>
+						<PackageName><![CDATA[employee_training_process]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[ОбучениеСТренером]]></ItemName>
+					</SourceEmbeddedObjectReference>
+					<SourceConnectableItemReference>
+						<PackageName><![CDATA[com.anylogic.libraries.material_handling]]></PackageName>
+						<ClassName><![CDATA[Store]]></ClassName>
+						<ItemName><![CDATA[in]]></ItemName>
+					</SourceConnectableItemReference>
+					<TargetEmbeddedObjectReference>
+						<PackageName><![CDATA[employee_training_process]]></PackageName>
+						<ClassName><![CDATA[Main]]></ClassName>
+						<ItemName><![CDATA[созданиеГруппыОпоздавших]]></ItemName>
+					</TargetEmbeddedObjectReference>
+					<TargetConnectableItemReference>
+						<PackageName><![CDATA[employee_training_process]]></PackageName>
+						<ClassName><![CDATA[СозданиеГруппыОпоздавших]]></ClassName>
+						<ItemName><![CDATA[port1]]></ItemName>
+					</TargetConnectableItemReference>
+					<Points>
+						<Point><X>580</X><Y>360</Y></Point>
+						<Point><X>530</X><Y>360</Y></Point>
+						<Point><X>460</X><Y>340</Y></Point>
 					</Points>
 				</Connector>
 			</Connectors>
@@ -1446,7 +1481,7 @@
 				<EmbeddedObject>
 					<Id>1732734167887</Id>
 					<Name><![CDATA[СамостоятельноеОбучение1]]></Name>
-					<X>650</X><Y>340</Y>
+					<X>710</X><Y>340</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1929,7 +1964,7 @@
 				<EmbeddedObject>
 					<Id>1732779388088</Id>
 					<Name><![CDATA[созданиеГруппыОпоздавших]]></Name>
-					<X>510</X><Y>300</Y>
+					<X>420</X><Y>320</Y>
 					<Label><X>0</X><Y>-15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2127,6 +2162,322 @@
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<InEnvironment>true</InEnvironment>	
+					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
+					<XCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</XCode>
+					<YCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</YCode>
+					<ZCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ZCode>
+					<ColumnCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</ColumnCode>
+					<RowCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</RowCode>
+					<LatitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LatitudeCode>
+					<LongitudeCode Class="CodeValue">
+						<Code><![CDATA[0]]></Code>
+					</LongitudeCode>
+					<LocationNameCode Class="CodeValue">
+						<Code><![CDATA[""]]></Code>
+					</LocationNameCode>
+					<InitializationType>SPECIFIED_NUMBER</InitializationType>
+					<InitializationDatabaseTableQuery>
+						<TableReference>
+						</TableReference>
+					</InitializationDatabaseTableQuery>
+					<InitializationDatabaseType>ONE_AGENT_PER_DATABASE_RECORD</InitializationDatabaseType>
+					<QuantityColumn>
+					</QuantityColumn>
+				</EmbeddedObject>
+				<EmbeddedObject>
+					<Id>1732779713160</Id>
+					<Name><![CDATA[ОбучениеСТренером]]></Name>
+					<X>580</X><Y>350</Y>
+					<Label><X>0</X><Y>-25</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<ActiveObjectClass>
+						<PackageName><![CDATA[com.anylogic.libraries.material_handling]]></PackageName>
+						<ClassName><![CDATA[Store]]></ClassName>
+					</ActiveObjectClass>
+					<GenericParameterSubstitute>
+						<GenericParameterSubstituteReference>
+							<PackageName><![CDATA[com.anylogic.libraries.material_handling]]></PackageName>
+							<ClassName><![CDATA[Store]]></ClassName>
+							<ItemName><![CDATA[1608133547886]]></ItemName>
+						</GenericParameterSubstituteReference>
+						<GenericParameterSubstituteValue Class="CodeValue">
+							<Code><![CDATA[Agent]]></Code>
+						</GenericParameterSubstituteValue>
+					</GenericParameterSubstitute>
+					<Parameters>
+						<Parameter>
+							<Name><![CDATA[resourceType]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[self.RESOURCE_PML]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resourcePool]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[fleet]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[loadingTime]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationType]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationPath]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationPathOffsetFromBeginning]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationPathOffset]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationAttractor]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationNode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationConveyor]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationConveyorOffsetFromBeginning]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationConveyorOffset]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationPositionOnConveyor]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationConveyorStation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationX]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationY]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationZ]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationInNetwork]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationNetwork]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[seizeDestinationLevel]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[slottingPolicy]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[storage]]></Name>
+							<Value Class="CodeValue">
+								<Code><![CDATA[обучениеСТренером_storage(agent)]]></Code>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[slot]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[moveAgentTo]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[elevationSpeed]]></Name>
+							<Value Class="CodeUnitValue">
+								<Code><![CDATA[обучениеСТренером_elevationSpeed(agent, unit)]]></Code>
+								<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
+							</Value>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[storingTime]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[priority]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[taskMayPreemptOtherTasks]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resourceTaskPreemptionPolicy]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[transporterTaskPreemptionPolicy]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseMovingPolicy]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationType]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationPath]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationPathOffsetFromBeginning]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationPathOffset]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationAttractor]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationNode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationConveyor]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationConveyorOffsetFromBeginning]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationConveyorOffset]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationPositionOnConveyor]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationConveyorStation]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationX]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationY]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationZ]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationInNetwork]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationNetwork]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseDestinationLevel]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[releaseReturnPolicy]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[movingGoHome]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[wrapUpTaskPolicyType]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[wrapUpTaskPriority]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[wrapUpTaskPreemptionPolicy]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[wrapUpUsageState]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[customizeTransporterChoice]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[transporterChoiceCondition]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[dispatchingPolicy]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[transporterComparison]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[transporterRating]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[customizeResourceChoice]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resourceChoiceCondition]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resourceSelectionMode]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resourceRating]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[resourceComparison]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onEnter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onSeizeResource]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onSeizeTransporter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onResourceArrived]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onLoadingStart]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onLoadingFinished]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onStorageStart]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onStorageFinished]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onReleaseResource]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onReleaseTransporter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onExit]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onRemove]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onTaskSuspendedResource]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onTaskResumedResource]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onTaskSuspendedTransporter]]></Name>
+						</Parameter>
+						<Parameter>
+							<Name><![CDATA[onTaskResumedTransporter]]></Name>
+						</Parameter>
+					</Parameters>
+					<ReplicationFlag>false</ReplicationFlag>
+					<Replication Class="CodeValue">
+						<Code><![CDATA[100]]></Code>
+					</Replication>
+					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<InitialLocationType>AT_ANIMATION_POSITION</InitialLocationType>
 					<XCode Class="CodeValue">
 						<Code><![CDATA[0]]></Code>
